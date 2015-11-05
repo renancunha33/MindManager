@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="247"/>
+	<parameter name="codigoFuncionario" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * from funcionario
+WHERE codigo_funcionario LIKE $P{codigoFuncionario}]]>
+	</queryString>
+	<field name="codigo_funcionario" class="java.lang.Integer"/>
+	<field name="nome_funcionario" class="java.lang.String"/>
+	<field name="sexo_funcionario" class="java.lang.String"/>
+	<field name="dia_funcionario" class="java.lang.String"/>
+	<field name="mes_funcionario" class="java.lang.String"/>
+	<field name="ano_funcionario" class="java.lang.String"/>
+	<field name="dtnasc_funcionario" class="java.lang.String"/>
+	<field name="rg_funcionario" class="java.lang.String"/>
+	<field name="cpf_funcionario" class="java.lang.String"/>
+	<field name="nac_funcionario" class="java.lang.String"/>
+	<field name="estcivil_funcionario" class="java.lang.String"/>
+	<field name="cargo_funcionario" class="java.lang.String"/>
+	<field name="salario_funcionario" class="java.lang.String"/>
+	<field name="status_funcionario" class="java.lang.String"/>
+	<field name="obs_funcionario" class="java.lang.String"/>
+	<field name="telres_funcionario" class="java.lang.String"/>
+	<field name="telcom_funcionario" class="java.lang.String"/>
+	<field name="cel_funcionario" class="java.lang.String"/>
+	<field name="id_funcionario" class="java.lang.String"/>
+	<field name="telrec_funcionario" class="java.lang.String"/>
+	<field name="email_funcionario" class="java.lang.String"/>
+	<field name="rua_funcionario" class="java.lang.String"/>
+	<field name="numero_funcionario" class="java.lang.String"/>
+	<field name="compl_funcionario" class="java.lang.String"/>
+	<field name="cep_funcionario" class="java.lang.String"/>
+	<field name="bairro_funcionario" class="java.lang.String"/>
+	<field name="cidade_funcionario" class="java.lang.String"/>
+	<field name="uf_funcionario" class="java.lang.String"/>
+	<field name="pais_funcionario" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Funcionário]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="590" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="17" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="37" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="57" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sexo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="197" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salário:                 R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="157" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado Civil:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="117" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="137" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nacionalidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="97" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[RG:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="177" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cargo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="77" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data de nascimento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="217" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="417" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="297" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone comercial:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="257" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Celular:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="437" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complemento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="317" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone para recado:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="237" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="377" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rua:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="457" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="337" width="117" height="20"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[E-Mail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="277" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="397" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bairro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="357" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEP:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="477" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[País:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="497" width="117" height="81"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observações:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="117" y="17" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{codigo_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="37" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nome_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="57" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sexo_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="77" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{dtnasc_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="97" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{rg_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="117" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpf_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="137" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nac_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="157" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{estcivil_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="177" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cargo_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="197" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{salario_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="217" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{status_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="237" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{telres_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="257" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cel_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="277" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{id_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="317" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{telrec_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="297" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{telcom_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="337" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{email_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="357" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cep_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="377" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{rua_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="397" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bairro_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="417" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{numero_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="437" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{compl_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="457" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{uf_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="477" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pais_funcionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="497" width="438" height="93"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{obs_funcionario}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codigoPaciente" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * from paciente
+WHERE codigo_paciente LIKE $P{codigoPaciente}]]>
+	</queryString>
+	<field name="codigo_paciente" class="java.lang.Integer"/>
+	<field name="nome_paciente" class="java.lang.String"/>
+	<field name="sexo_paciente" class="java.lang.String"/>
+	<field name="dia_paciente" class="java.lang.String"/>
+	<field name="mes_paciente" class="java.lang.String"/>
+	<field name="ano_paciente" class="java.lang.String"/>
+	<field name="dtnasc_paciente" class="java.lang.String"/>
+	<field name="rg_paciente" class="java.lang.String"/>
+	<field name="cpf_paciente" class="java.lang.String"/>
+	<field name="nacionalidade_paciente" class="java.lang.String"/>
+	<field name="profissao_paciente" class="java.lang.String"/>
+	<field name="estcivil_paciente" class="java.lang.String"/>
+	<field name="conjugue_paciente" class="java.lang.String"/>
+	<field name="responsavel_paciente" class="java.lang.String"/>
+	<field name="rgresp_paciente" class="java.lang.String"/>
+	<field name="convenio_paciente" class="java.lang.String"/>
+	<field name="motivo_paciente" class="java.lang.String"/>
+	<field name="obs_paciente" class="java.lang.String"/>
+	<field name="telres_paciente" class="java.lang.String"/>
+	<field name="telcom_paciente" class="java.lang.String"/>
+	<field name="cel_paciente" class="java.lang.String"/>
+	<field name="id_paciente" class="java.lang.String"/>
+	<field name="telrec_paciente" class="java.lang.String"/>
+	<field name="email_paciente" class="java.lang.String"/>
+	<field name="rua_paciente" class="java.lang.String"/>
+	<field name="numero_paciente" class="java.lang.String"/>
+	<field name="compl_paciente" class="java.lang.String"/>
+	<field name="cep_paciente" class="java.lang.String"/>
+	<field name="bairro_paciente" class="java.lang.String"/>
+	<field name="cidade_paciente" class="java.lang.String"/>
+	<field name="uf_paciente" class="java.lang.String"/>
+	<field name="pais_paciente" class="java.lang.String"/>
+	<field name="laudo_paciente" class="java.lang.String"/>
+	<field name="anamnese_paciente" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Anamnese]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="59" height="35"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PACIENTE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="59" y="0" width="496" height="35"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nome_paciente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="279" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="252"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{anamnese_paciente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

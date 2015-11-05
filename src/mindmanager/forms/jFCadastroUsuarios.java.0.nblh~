@@ -1,0 +1,280 @@
+package mindmanager.forms;
+
+/**
+ *
+ * @author EagleTech
+ */
+public class jFCadastroUsuarios extends javax.swing.JFrame {
+
+      public jFCadastroUsuarios() {
+        initComponents();
+        desabilitaDados();
+        jBSalvar.setEnabled(false);
+        jBCancelar.setEnabled(false);
+    }
+
+        @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPDadosUsuario = new javax.swing.JPanel();
+        jLNome = new javax.swing.JLabel();
+        jLLogin = new javax.swing.JLabel();
+        jLSenha = new javax.swing.JLabel();
+        jLConfirme = new javax.swing.JLabel();
+        jLTipo = new javax.swing.JLabel();
+        jTNome = new javax.swing.JTextField();
+        jTLogin = new javax.swing.JTextField();
+        jCTipo = new javax.swing.JComboBox();
+        jPSenha = new javax.swing.JPasswordField();
+        jPConfirma = new javax.swing.JPasswordField();
+        jLCodigo = new javax.swing.JLabel();
+        jTCodigo = new javax.swing.JTextField();
+        jBPesquisar = new javax.swing.JButton();
+        jPBotoes = new javax.swing.JPanel();
+        jBAlterar = new javax.swing.JButton();
+        jBSalvar = new javax.swing.JButton();
+        jBCancelar = new javax.swing.JButton();
+        jBImprimir = new javax.swing.JButton();
+        jBNovo = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastro de Usuário");
+        setResizable(false);
+
+        jPDadosUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        jLNome.setText("Nome:");
+
+        jLLogin.setText("Login:");
+
+        jLSenha.setText("Senha:");
+
+        jLConfirme.setText("Confirme a senha:");
+
+        jLTipo.setText("Tipo de usuário:");
+
+        jCTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Escolha o tipo Secretário(a)", "Psicólogo(a)" }));
+
+        jLCodigo.setText("Código:");
+
+        jTCodigo.setEditable(false);
+
+        javax.swing.GroupLayout jPDadosUsuarioLayout = new javax.swing.GroupLayout(jPDadosUsuario);
+        jPDadosUsuario.setLayout(jPDadosUsuarioLayout);
+        jPDadosUsuarioLayout.setHorizontalGroup(
+            jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDadosUsuarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPDadosUsuarioLayout.createSequentialGroup()
+                        .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLConfirme)
+                            .addComponent(jLLogin)
+                            .addComponent(jLCodigo)
+                            .addComponent(jLNome)
+                            .addComponent(jLSenha))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTNome, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jPSenha, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jPConfirma, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE))))
+                    .addGroup(jPDadosUsuarioLayout.createSequentialGroup()
+                        .addComponent(jLTipo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jCTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        jPDadosUsuarioLayout.setVerticalGroup(
+            jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDadosUsuarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLCodigo)
+                    .addComponent(jTCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLNome)
+                    .addComponent(jTNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLLogin))
+                .addGap(8, 8, 8)
+                .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLSenha)
+                    .addComponent(jPSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLConfirme)
+                    .addComponent(jPConfirma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLTipo)
+                    .addComponent(jCTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jBPesquisar.setText("Ver Lista/ Buscar");
+
+        jPBotoes.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        jBAlterar.setText("Alterar");
+
+        jBSalvar.setText("Salvar");
+
+        jBCancelar.setText("Cancelar");
+        jBCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBCancelarActionPerformed(evt);
+            }
+        });
+
+        jBImprimir.setText("Imprimir");
+
+        jBNovo.setText("Novo");
+        jBNovo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBNovoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPBotoesLayout = new javax.swing.GroupLayout(jPBotoes);
+        jPBotoes.setLayout(jPBotoesLayout);
+        jPBotoesLayout.setHorizontalGroup(
+            jPBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPBotoesLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jBNovo, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBImprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+        jPBotoesLayout.setVerticalGroup(
+            jPBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPBotoesLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jBNovo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jBSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jBAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jBImprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jBCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jPDadosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPBotoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(jBPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(22, 22, 22))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jBPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPDadosUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPBotoes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        pack();
+        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        java.awt.Dimension dialogSize = getSize();
+        setLocation((screenSize.width-dialogSize.width)/2,(screenSize.height-dialogSize.height)/2);
+    }// </editor-fold>//GEN-END:initComponents
+
+        private void jBNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBNovoActionPerformed
+           habilitaDados();
+           limparDados();
+           jTNome.requestFocus();
+        }//GEN-LAST:event_jBNovoActionPerformed
+
+        private void jBCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCancelarActionPerformed
+            limparDados();
+            desabilitaDados();
+        }//GEN-LAST:event_jBCancelarActionPerformed
+
+        public void desabilitaDados(){
+            jTCodigo.setEditable(false);
+            jTNome.setEditable(false);
+            jPSenha.setEditable(false);
+            jPConfirma.setEditable(false);
+            jCTipo.setEditable(false);
+            jBSalvar.setEnabled(false);
+            jBCancelar.setEnabled(false);
+           
+        }
+        
+        public void habilitaDados(){
+            jTNome.setEditable(true);
+            jPSenha.setEditable(true);
+            jPConfirma.setEditable(true);
+            jCTipo.setEditable(true);
+            jBSalvar.setEnabled(true);
+           jBCancelar.setEnabled(true);
+        }
+        
+        public void limparDados(){
+            jTCodigo.setText("");
+            jTNome.setText("");
+            jPSenha.setText("");
+            jPConfirma.setText("");
+            jCTipo.setSelectedIndex(0);
+        }
+        
+        
+    
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                new jFCadastroUsuarios().setVisible(true);
+            }
+        });
+    }
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBAlterar;
+    private javax.swing.JButton jBCancelar;
+    private javax.swing.JButton jBImprimir;
+    private javax.swing.JButton jBNovo;
+    private javax.swing.JButton jBPesquisar;
+    private javax.swing.JButton jBSalvar;
+    private javax.swing.JComboBox jCTipo;
+    private javax.swing.JLabel jLCodigo;
+    private javax.swing.JLabel jLConfirme;
+    private javax.swing.JLabel jLLogin;
+    private javax.swing.JLabel jLNome;
+    private javax.swing.JLabel jLSenha;
+    private javax.swing.JLabel jLTipo;
+    private javax.swing.JPanel jPBotoes;
+    private javax.swing.JPasswordField jPConfirma;
+    private javax.swing.JPanel jPDadosUsuario;
+    private javax.swing.JPasswordField jPSenha;
+    private javax.swing.JTextField jTCodigo;
+    private javax.swing.JTextField jTLogin;
+    private javax.swing.JTextField jTNome;
+    // End of variables declaration//GEN-END:variables
+}

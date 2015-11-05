@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codigoPaciente" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * from paciente
+WHERE codigo_paciente LIKE $P{codigoPaciente}]]>
+	</queryString>
+	<field name="codigo_paciente" class="java.lang.Integer"/>
+	<field name="nome_paciente" class="java.lang.String"/>
+	<field name="sexo_paciente" class="java.lang.String"/>
+	<field name="dia_paciente" class="java.lang.String"/>
+	<field name="mes_paciente" class="java.lang.String"/>
+	<field name="ano_paciente" class="java.lang.String"/>
+	<field name="dtnasc_paciente" class="java.lang.String"/>
+	<field name="rg_paciente" class="java.lang.String"/>
+	<field name="cpf_paciente" class="java.lang.String"/>
+	<field name="nacionalidade_paciente" class="java.lang.String"/>
+	<field name="profissao_paciente" class="java.lang.String"/>
+	<field name="estcivil_paciente" class="java.lang.String"/>
+	<field name="conjugue_paciente" class="java.lang.String"/>
+	<field name="responsavel_paciente" class="java.lang.String"/>
+	<field name="rgresp_paciente" class="java.lang.String"/>
+	<field name="convenio_paciente" class="java.lang.String"/>
+	<field name="motivo_paciente" class="java.lang.String"/>
+	<field name="obs_paciente" class="java.lang.String"/>
+	<field name="telres_paciente" class="java.lang.String"/>
+	<field name="telcom_paciente" class="java.lang.String"/>
+	<field name="cel_paciente" class="java.lang.String"/>
+	<field name="id_paciente" class="java.lang.String"/>
+	<field name="telrec_paciente" class="java.lang.String"/>
+	<field name="email_paciente" class="java.lang.String"/>
+	<field name="rua_paciente" class="java.lang.String"/>
+	<field name="numero_paciente" class="java.lang.String"/>
+	<field name="compl_paciente" class="java.lang.String"/>
+	<field name="cep_paciente" class="java.lang.String"/>
+	<field name="bairro_paciente" class="java.lang.String"/>
+	<field name="cidade_paciente" class="java.lang.String"/>
+	<field name="uf_paciente" class="java.lang.String"/>
+	<field name="pais_paciente" class="java.lang.String"/>
+	<field name="laudo_paciente" class="java.lang.String"/>
+	<field name="anamnese_paciente" class="java.lang.String"/>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paciente]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="704" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="35" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="15" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="115" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="195" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cônjugue:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="135" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nacionalidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="155" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profissão:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="75" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data de nascimento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="55" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sexo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="95" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[RG:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="175" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado Civil:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="215" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Convênio:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="235" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Responsável:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="255" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[RG do responsável:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="295" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Celular:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="355" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone para recado:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="275" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="315" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="375" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="335" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone comercial:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="395" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEP:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="415" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rua:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="435" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bairro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="455" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="475" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complemento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="495" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="515" width="117" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[País:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="535" width="117" height="81"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Motivo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="616" width="117" height="81"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observações:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="117" y="15" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{codigo_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="35" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nome_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="55" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sexo_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="75" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{dtnasc_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="95" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{rg_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="115" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpf_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="135" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nacionalidade_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="155" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{profissao_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="175" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{estcivil_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="195" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{conjugue_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="215" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{convenio_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="235" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{responsavel_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="255" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{rgresp_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="275" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{telres_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="295" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cel_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="315" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{id_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="335" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{telcom_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="355" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{telrec_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="375" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{email_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="395" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cep_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="415" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{rua_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="435" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bairro_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="455" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{numero_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="475" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{compl_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="495" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{uf_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="515" width="438" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pais_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="535" width="438" height="81"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{motivo_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="117" y="616" width="438" height="81"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{obs_paciente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
